@@ -1,0 +1,37 @@
+#course-info-header {
+  height: 80vh;
+
+  #featured-course-heading {
+    background: rgba(227, 231, 235, 0.7);
+
+    h1 {
+      color: $font-black;
+      font-weight: bold;
+    }
+  }
+}
+
+#featured-course-info {
+  background: $primary-theme-4;
+  li::marker {
+    color: $font-white;
+    content: '► ';
+  }
+
+  .btn-secondary {
+    background: repeat padding-box border-box 0% 0% / auto auto scroll
+        linear-gradient(333deg, #4f44da 26%, rgba(180, 102, 64, 0) 100%),
+      #b46640;
+    border: none;
+    color: $font-white;
+    font-weight: bold;
+  }
+
+  .btn-secondary:hover {
+    background: $dark-blue;
+  }
+
+  #featured-course-img {
+    max-width: 80% !important;
+  }
+}

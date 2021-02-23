@@ -1,0 +1,82 @@
+#info-header {
+  // width: 98vw;
+  //height: 40vh;
+  overflow-x: hidden;
+  height: 60vh;
+  background: url('/img/discussion.jpeg') no-repeat center center/cover;
+
+  .custom-shape-divider-bottom-1611177487 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    border: none !important;
+    stroke: $background-dark !important;
+    stroke-width: 0px;
+  }
+
+  .custom-shape-divider-bottom-1611177487 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    border: none !important;
+    stroke: $background-dark !important;
+    stroke-width: 0px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &-text {
+    //  padding: 5rem;
+    h1 {
+      color: $font-white;
+    }
+
+    p {
+      color: $font-white;
+      font-weight: 500;
+    }
+
+    .form-inline {
+      button {
+        line-height: 0;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .form-control {
+      width: 18rem !important;
+      height: 3rem !important;
+      margin-right: 0.2rem;
+      border: 2px solid $primary !important;
+      background-color: white !important;
+      opacity: 1 !important;
+      position: static;
+      z-index: inherit;
+    }
+  }
+
+  &-content {
+    padding-left: 4rem;
+  }
+
+  .home-overlay {
+    height: 60vh;
+    width: 99vw;
+  }
+}
+
+.tab-label {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,447 @@
+// reset
+
+@import 'reset';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// Variables
+@import 'variables';
+
+// pages
+@import 'pages/home';
+@import 'pages/course-info';
+@import 'pages/calendar';
+@import 'pages/about';
+@import 'pages/courses';
+@import 'pages/registration';
+
+// components
+@import 'components/carousel';
+@import 'components/course-accordion';
+@import 'components/memberpress';
+
+// Bootstrap
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+  font-family: $font-family-body;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #0f184a;
+  //width: 99vw;
+  //overflow-x: hidden !important;
+  overflow-x: hidden !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $font-white;
+  }
+
+  ul,
+  li,
+  hr,
+  p {
+    color: $font-grey;
+  }
+}
+
+li,
+p {
+  font-family: $font-family-paragraph;
+}
+
+.course-date {
+  position: relative;
+  top: -40px;
+}
+
+.course-bg {
+  min-height: 18rem;
+  width: 18rem;
+}
+
+.date-content-overlay {
+  background: $background-overlay;
+  width: 100%;
+  // height: 100%;
+}
+
+.list-group {
+  &-item {
+    color: $font-grey;
+    background: $foreground-2-theme-4 !important;
+  }
+}
+
+.w-100vw {
+  width: 99vw !important;
+}
+
+.subheading {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: $font-white;
+  margin-bottom: 0;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1rem;
+  color: $font-white;
+}
+
+.foreground-light {
+  background: $foreground-2-theme-4;
+}
+
+.foreground-dark {
+  background: $foreground-theme-4;
+}
+
+.font-blue {
+  color: $primary-theme-4 !important;
+}
+
+.portrait {
+  width: 16%;
+  height: 40%;
+}
+
+.icon-round-wrapper {
+  height: 4rem;
+  width: 4rem;
+  background: $primary;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 1rem 2rem 2rem 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.img-border {
+  border-width: 5px !important;
+}
+
+.img-wrapper-md {
+  width: 6rem;
+  height: 6rem;
+}
+
+.img-wrapper {
+  height: 11rem;
+  width: 20rem;
+  background: white;
+}
+
+.img-wrapper-sm {
+  width: 5rem;
+  height: 5rem;
+}
+
+.svg-top {
+  svg {
+    margin-bottom: -3px;
+  }
+}
+
+svg {
+  background-size: 20px 30px;
+}
+
+.background-overlay {
+  background: rgba(61, 143, 228, 0.5);
+}
+.bottom-svg {
+  svg {
+    path {
+      fill: $primary;
+    }
+
+    margin-top: -3px;
+  }
+
+  overflow-x: hidden;
+}
+
+.day {
+  font-size: 0.7rem;
+  color: gray !important;
+}
+
+.date-lg {
+  font-weight: bold !important;
+  font-size: 1.9rem;
+  margin-right: 0.4rem;
+}
+
+.month {
+  font-size: 0.8rem;
+}
+
+.fa-user {
+  color: $primary;
+}
+
+.fa-ellipsis-h {
+  color: $secondary;
+}
+
+.fs-sm {
+  font-size: 0.8rem;
+}
+
+.fs-md {
+  font-size: 1.125rem;
+}
+
+.heading-border {
+  border-bottom: 3px solid $primary;
+}
+
+.header-address {
+  font-size: 1.3rem;
+  color: $highlight-text;
+  font-weight: 500;
+}
+
+.highlight-text {
+  color: $highlight-text !important;
+}
+
+.highlight-text-brighter {
+  color: $highlight-text-brighter !important;
+}
+
+.border-secondary {
+  border-color: $secondary !important;
+}
+
+.bold {
+  font-weight: 600 !important;
+}
+
+.content-logo {
+  width: 60%;
+  height: auto;
+}
+
+#logo {
+  width: 40%;
+  height: auto;
+}
+
+#logo-header {
+  width: 5%;
+  height: auto;
+}
+
+#nav-header {
+  p {
+    margin: 0;
+  }
+}
+
+#nav-header,
+#social-header {
+  background: $foreground-2-theme-4;
+}
+
+#social-header {
+  .fab {
+    color: $font-grey;
+  }
+
+  #announcement {
+    a:hover {
+      color: $secondary !important;
+    }
+  }
+}
+
+.p-xl {
+  padding: 10rem;
+}
+
+.section-border {
+  border-bottom: 3px white solid;
+  width: 15rem;
+}
+
+.nav-item {
+  font-size: 0.85rem;
+  a {
+    @extend .nav-link;
+  }
+}
+
+.underline-span {
+  border: 2px solid $primary;
+}
+
+.custom-navbar {
+  padding: 0.5 0.5rem;
+  background: #ffffff !important;
+
+  .nav-link,
+  .navbar-brand {
+    color: $primary !important;
+  }
+
+  .nav-link {
+    border-right: 1px solid $primary;
+    border-left: 1px solid $primary;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .nav-link:hover {
+    color: $font-white !important;
+    border-color: #ffffff;
+    background-color: #566fb8;
+
+    .fa-user {
+      color: $font-white !important;
+    }
+  }
+}
+
+.card {
+  background: $foreground-2-theme-4;
+  &-title {
+    color: $font-white;
+  }
+
+  &-body {
+    color: $font-grey;
+  }
+}
+
+hr {
+  border-color: $font-white !important;
+}
+
+footer {
+  background: $black;
+  width: 100%;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $font-white;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-header {
+    color: $font-white;
+    // text-align: center;
+  }
+
+  .footer-item {
+    font-size: 0.75rem;
+    color: $font-grey;
+    margin-bottom: 0 !important;
+    padding: 0.125rem 0;
+
+    a {
+      color: $font-grey;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .form-inline {
+    button {
+      line-height: 0;
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+  }
+
+  .form-control {
+    width: 8rem !important;
+    height: 1.5rem !important;
+    margin-right: 0.2rem;
+    border: 2px solid $primary !important;
+    background-color: white !important;
+    opacity: 1 !important;
+    position: static;
+    z-index: inherit;
+  }
+}
+
+.fa-ellipsis-h {
+  font-size: 1.3rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 355px) and (max-width: 991px) {
+  .nav-item {
+    font-size: 0.8rem;
+  }
+
+  .custom-navbar-brand {
+    width: 50% !important;
+  }
+
+  .navbar {
+    padding: 0 !important;
+    .navbar-collapse {
+      background: $secondary;
+
+      .nav-link {
+        color: $font-white !important;
+        border: none;
+      }
+    }
+  }
+
+  #announcement {
+    font-size: 0.8rem;
+  }
+
+  #logo {
+    width: 25%;
+    padding-left: 0.5rem;
+    height: auto;
+  }
+
+  .portrait {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+@media (max-width: 992px) {
+  // * Styles to overwrite default navbar of slide down. This will make it slide from right
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

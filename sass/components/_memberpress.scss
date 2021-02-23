@@ -1,0 +1,134 @@
+#courses-home {
+  text-align: center;
+
+  a {
+    font-size: 1.2rem;
+    color: $font-white;
+  }
+}
+
+.grid-pad {
+  a {
+    color: $font-white;
+    font-size: 1.2rem;
+  }
+
+  a:hover {
+    color: $font-white;
+  }
+}
+
+.mp_wrapper,
+#registration-wrapper {
+  form {
+    color: $font-white;
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    input[type='number'] {
+      display: block;
+      width: 100%;
+      height: calc(1.6em + 0.75rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #495057;
+      background-color: $font-grey !important;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    input[type='submit'] {
+      display: inline-block;
+      font-weight: 400;
+      color: $font-white;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      background-color: $primary-theme-4;
+      border: 1px solid $primary-theme-4;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      border-radius: 0.25rem;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+  }
+}
+
+input {
+  opacity: 1 !important;
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+#mepr-account-payments-table,
+#mepr-account-subscriptions-table {
+  thead {
+    tr {
+      color: $font-white;
+    }
+  }
+
+  tbody {
+    tr {
+      color: $font-white;
+      a {
+        color: $font-white;
+      }
+    }
+  }
+}
+
+.mepr-nav-item {
+  a {
+    color: $font-white;
+  }
+
+  a:hover {
+    color: $font-white;
+  }
+}
+
+.mepr-login-actions {
+  a {
+    display: inline-block;
+    font-weight: 400;
+    color: $font-white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $primary-theme-4;
+    border: 1px solid $primary-theme-4;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+}
+
+.mepr-account-terms,
+.mepr-account-subscr-id,
+.mepr-no-active-subscriptions,
+.mepr-unauthorized-message,
+.mp-no-subs {
+  color: $font-white;
+}
+
+.user-progress {
+  height: auto !important;
+  color: $font-white;
+}
+
+@media (max-width: 768px) {
+  .col-1-2 {
+    width: 100%;
+  }
+}

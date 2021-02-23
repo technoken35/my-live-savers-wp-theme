@@ -1,0 +1,31 @@
+#video-header {
+}
+
+#about-info {
+  background: $primary-theme-4;
+  h4 {
+    text-decoration: underline;
+  }
+}
+
+#about-sign-up {
+  height: 35vh;
+
+  #about-content-overlay {
+    background: rgba(61, 143, 228, 0.3);
+    height: 35vh;
+
+    .btn-secondary {
+      background: repeat padding-box border-box 0% 0% / auto auto scroll
+          linear-gradient(333deg, #4f44da 26%, rgba(180, 102, 64, 0) 100%),
+        #b46640;
+      border: none;
+      color: $font-white;
+      font-weight: bold;
+    }
+
+    .btn-secondary:hover {
+      background: $dark-blue;
+    }
+  }
+}

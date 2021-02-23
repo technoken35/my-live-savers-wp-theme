@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#welcome-header {
+  // width: 98vw;
+  //height: 40vh;
+  overflow-x: hidden;
+  height: 60vh;
+
+  .custom-shape-divider-bottom-1611177487 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    border: none !important;
+    stroke: $background-dark !important;
+    stroke-width: 0px;
+  }
+
+  .custom-shape-divider-bottom-1611177487 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    border: none !important;
+    stroke: $background-dark !important;
+    stroke-width: 0px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &-text {
+    //  padding: 5rem;
+    h1 {
+      color: $font-white;
+    }
+
+    p {
+      color: $font-white;
+      font-weight: 500;
+    }
+
+    .form-inline {
+      button {
+        line-height: 0;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .form-control {
+      width: 18rem !important;
+      height: 3rem !important;
+      margin-right: 0.2rem;
+      border: 2px solid $primary !important;
+      background-color: white !important;
+      opacity: 1 !important;
+      position: static;
+      z-index: inherit;
+    }
+  }
+
+  &-content {
+    padding-left: 4rem;
+  }
+
+  .home-overlay {
+    height: 60vh;
+    width: 99vw;
+  }
+}
+
+.home-feature-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#welcome-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#registration-link-home {
+  position: relative;
+  top: -4.3rem;
+  text-decoration: underline;
+}
+
+#home-feature {
+  width: 99vw;
+  // padding: 2.5rem;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  a {
+    color: $font-white;
+  }
+
+  p {
+    color: $font-grey;
+  }
+
+  a {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &-content {
+    //padding: 0rem 5rem;
+    margin-top: 1.5rem;
+
+    img {
+      border-width: 5px !important;
+    }
+
+    #background-image-wrapper {
+      // position: relative;
+      height: 22rem;
+      width: 22rem;
+    }
+
+    #foreground-image-wrapper {
+      position: relative;
+      top: 3rem;
+      left: -6.5rem;
+      height: 16rem;
+      width: 16rem;
+    }
+  }
+}
+
+#sponsors-feature {
+  #sponsors-bg {
+    // width: 100vw;
+    height: 30vh;
+  }
+}
+
+#home-message {
+  padding: 3rem;
+  h3 {
+    font-size: 2.03rem;
+  }
+  p {
+    font-weight: 900;
+    font-size: 1.438rem;
+  }
+}
+
+#clinic-feature {
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr 1.3fr;
+
+  p,
+  h4 {
+    color: black;
+  }
+
+  h4 {
+    font-weight: lighter;
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    color: #bc9b5d;
+  }
+}
+
+#about {
+  h3 {
+    //font-family: 'Pacifico', cursive;
+    font-style: italic;
+  }
+
+  .fab {
+    color: white;
+  }
+}
+
+#contact {
+  height: 85%;
+  h1 {
+    color: $primary;
+    font-size: 3rem;
+    letter-spacing: 0.15em;
+  }
+
+  p {
+    color: black;
+  }
+  background: #fbfbfb;
+  a {
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+
+  .row {
+    height: 30rem;
+  }
+
+  #email {
+    background: white;
+    border-color: black !important;
+
+    .far {
+      color: black;
+    }
+  }
+
+  #phone {
+    ///position: relative;
+    padding: 0;
+    color: white;
+
+    &-content {
+      background-color: rgba(226, 69, 73, 0.8);
+      width: 100%;
+      height: 100%;
+      a {
+        color: white;
+      }
+
+      .fas {
+        color: white;
+      }
+    }
+  }
+
+  #facebook {
+    ///position: relative;
+    padding: 0;
+    color: white;
+
+    &-content {
+      background-color: rgba(4, 67, 109, 0.8);
+      width: 100%;
+      height: 100%;
+      a {
+        color: white;
+      }
+      .fab {
+        color: white;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 355px) and (max-width: 767px) {
+  .home-feature-img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  #clinic-feature {
+    grid-template-columns: 1fr;
+  }
+
+  #welcome-header {
+    overflow-y: hidden;
+    height: 55vh;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    &-text {
+      // padding: 2rem;
+      //z-index: 2;
+      .form-control,
+      .form-inline {
+        input {
+          width: 12rem !important;
+          height: 2rem !important;
+          margin-right: 0.2rem;
+          border: 2px solid $background-dark !important;
+        }
+
+        button {
+          line-height: 0;
+          font-size: 0.8rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    &-content {
+      padding: 0;
+      margin-top: 0.4rem;
+    }
+  }
+
+  #home-feature {
+    h1,
+    h2,
+    h3,
+    a {
+      color: $font-white;
+    }
+
+    p {
+      color: $font-grey;
+    }
+
+    a {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.125rem;
+    }
+
+    &-content {
+      padding: 1rem;
+      margin-top: 0rem;
+
+      .card-deck {
+        .card {
+          background: none;
+          //   border: 1px solid $grey;
+          border: none;
+          &-title {
+            color: $font-white;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    border: none;
+  }
+
+  #sponsors-feature {
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 2rem;
+    }
+  }
+
+  #contact {
+    .row {
+      height: 10rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

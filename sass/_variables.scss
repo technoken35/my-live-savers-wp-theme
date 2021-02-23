@@ -1,0 +1,108 @@
+// * Body
+$body-bg: #f8fafc;
+
+// * Typography
+$font-family-paragraph: 'Raleway', sans-serif;
+$font-family-body: 'Roboto', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// *  Font colors
+
+$font-grey: lighten(#dadadd, 10%);
+$font-white: #ffff;
+$font-black: black;
+
+// * Colors
+$black: #101317;
+$blue: #3490dc;
+$dark-blue: #4f43d9;
+$indigo: #6574cd;
+$purple: #86079d;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$grey: $font-grey;
+$primary: #0f184a;
+$white: #dedcca;
+$secondary: #4dc6c9;
+$highlight-text: #4dc6c9;
+$highlight-text-brighter: #50e3c2;
+
+//theme 4
+// darkest
+$background-theme-4: #191f38;
+$background-2-theme-4: #242c4b;
+$foreground-theme-4: #242c4b;
+$foreground-2-theme-4: #31365a;
+$primary-theme-4: #3d8fe4;
+$secondary-theme-4: #e3724b;
+
+// * Background
+
+$background-overlay: rgba(46, 49, 49, 0.3);
+$background: #292e32;
+$foreground: #2a2f33;
+$foreground-2: #3a4556;
+$background-dark: #0d0282;
+$background-blue-gradient: linear-gradient(#2e38a4, #9198e5);
+$background-gradient: linear-gradient(
+  $foreground-theme-4,
+  $foreground-2-theme-4
+);
+$backround-light: #303bb7;
+
+// theme 2
+$background-theme-2: #182039;
+$foreground-theme-2: #1e2745;
+$foreground-2-theme-2: #212b4e;
+$primary-theme-2: #3e64ff;
+
+//theme 3
+$background-theme-3: #222b40;
+$foreground-theme-3: #36425d;
+$foreground-2-theme-3: #222b41;
+$primary-theme-3: #3182ff;
+
+// *Theme
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'danger': #ff4136,
+);
+
+$background-fire-fox: -moz-radial-gradient(
+  center,
+  ellipse cover,
+  $backround-light,
+  $background-dark
+); /* FF3.6-15 */
+$background-old-safari-chrome: -webkit-radial-gradient(
+  center,
+  ellipse cover,
+  $backround-light,
+  $background-dark
+); /* Chrome10-25,Safari5.1-6 */
+$background-safari-chrome: radial-gradient(
+  ellipse at center,
+  $backround-light,
+  $background-dark
+); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+// * Shapes
+
+$quarter-circle-height: 267.5px;
+$quarter-circle-width: 535px;
+$quarter-circle-nested-width: 245px;
+$quarter-circle-nested-height: 122.5px;
+$semi-circle-height: 100px;
+$semi-circle-width: 200px;
+
+// blue background: linear-gradient(#2e38a4, #9198e5);
+
+// purple/ blue background: linear-gradient(#2e38a4, #7b1098);
