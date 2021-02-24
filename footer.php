@@ -1,6 +1,26 @@
 <footer>
 
         <div class="container ">
+            <?php
+            
+            $contact_pod= pods('contact_info');
+            $contact_pod->find('name ASC');
+            $loopIndex=0;
+            $loop_index
+            ?>
+            <?php while($contact_pod->fetch()) : ?>
+            <?php 
+                $phone_number = $contact_pod->field('phone_number');
+                $email = $contact_pod->field('email');
+                $street_address = $contact_pod->field('street_address');
+                $city_state_zip = $contact_pod->field('city_state_zip');
+                $business_name = $contact_pod->field('business_name');
+                $facebook= $contact_pod->field('facebook');
+                $instagram= $contact_pod->field('instagram');
+                // permalink in wordpress is a link to the individual post
+                $permalink = $contact_pod->field('permalink');
+                $loopIndex +=1;
+            ?>
             <div class="row d-flex justify-content-around py-3">
                 <div class="col-6 col-md-4 text-center">
     
@@ -25,18 +45,18 @@
                 </div>
                 <div class="col-6 col-md-4 text-center d-flex flex-column">
                     <div class=" footer-item">
-                        <a href="tel:702-623-8616"><i class="fas fa-phone-volume"></i> 702-623-8616</a>
+                        <a href="tel:<?php echo $phone_number;?>"><i class="fas fa-phone-volume"></i> <?php echo $phone_number;?></a>
                     </div>
                     <div class="footer-item">
-                        <a href="mailto:info@mylivesavers.com"> <i class="fas fa-paper-plane"></i> info@mylivesavers.com</a>
+                        <a href="mailto:<?php echo $email;?>"> <i class="fas fa-paper-plane"></i> <?php echo $email;?></a>
                     </div>
-                        <p class="footer-item"><i class="fas fa-map-marked-alt"></i> 4660 S. Eastern Ave. #100</p>
-                        <p class="footer-item">Las Vegas NV, 89119</p>
+                        <p class="footer-item"><i class="fas fa-map-marked-alt"></i> <?php echo $street_address;?></p>
+                        <p class="footer-item"><?php echo $city_state_zip;?></p>
                     <div class="footer-item">
-                        <a href="https://www.facebook.com/mylivesavers/"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="<?php echo $facebook;?>"><i class="fab fa-facebook fa-2x"></i></a>
                     </div>
                     <div class=" footer-item">
-                        <a href="https://www.instagram.com/mylivesavers/"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="<?php echo $instagram;?>"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="d-none col-6 col-md-4 text-center d-md-flex flex-column align-items-center">
@@ -50,8 +70,10 @@
     
                 </div>
             </div>
-            <p class="footer-item text-center">© <span class="date"></span> Live Savers Training Center</p>
+            <p class="footer-item text-center">© <span class="date"></span> <?php echo $business_name;?></p>
             <p class="footer-item text-center pb-3">Licensed By Commission on Post Secondary Education | Approved By The Nevada State Board of Nursing</p>
+
+            <?php endwhile; ?>    
         </div>
     </footer>
      <!-- Wordpress admin footer -->

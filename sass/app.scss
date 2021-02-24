@@ -20,6 +20,8 @@
 @import 'components/carousel';
 @import 'components/course-accordion';
 @import 'components/memberpress';
+@import 'components/events';
+@import 'components/quiz';
 
 // Bootstrap
 // Custom.scss
@@ -47,7 +49,7 @@ body {
   li,
   hr,
   p {
-    color: $font-grey;
+    color: $font-white;
   }
 }
 

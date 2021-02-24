@@ -49,6 +49,16 @@
             'after_title' => '</h3>'
         ));
 
+        register_sidebar(array(
+            'name' => __('practice-test','myportfolio'),
+            'id'=> 'practice-test-1',
+            'before_widget' => '<div id="%1$s class="widget-box %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        ));
+
+
     }
 
     // initialize sidebar widget we defined

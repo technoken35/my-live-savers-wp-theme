@@ -144,6 +144,10 @@ table {
 /* FF3.6-15 */
 /* Chrome10-25,Safari5.1-6 */
 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+#logo-wrapper-header #logo {
+  width: 30%;
+}
+
 #welcome-header {
   overflow-x: hidden;
   height: 60vh;
@@ -1113,6 +1117,70 @@ input {
     width: 100%;
   }
 }
+.tribe-events-pg-template {
+  color: #ffff !important;
+}
+.tribe-events-pg-template svg {
+  fill: #ffff !important;
+}
+
+.tribe-events-schedule h2 {
+  color: #ffff;
+}
+
+.tribe-events-widget-events-list h3,
+.tribe-events-widget-events-list a,
+.tribe-events-widget-events-list span,
+.tribe-common-l-container h3,
+.tribe-common-l-container a,
+.tribe-common-l-container span,
+.tribe-events-l-container h3,
+.tribe-events-l-container a,
+.tribe-events-l-container span {
+  color: #ffff;
+}
+.tribe-events-widget-events-list a:hover,
+.tribe-common-l-container a:hover,
+.tribe-events-l-container a:hover {
+  text-decoration: underline;
+}
+
+.tribe-events-calendar-list__event-title-link,
+.tribe-events-calendar-list__event-date-tag-daynum,
+time {
+  color: #ffff !important;
+}
+
+.tribe-events-calendar-list__event-date-tag-weekday {
+  color: whitesmoke !important;
+}
+
+.tribe-common .tribe-common-c-svgicon--messages-not-found path {
+  stroke: #ffff !important;
+}
+
+.tribe-common-anchor-thin-alt {
+  color: #ffff !important;
+}
+
+.tribe-events-calendar-month__day-date .tribe-common-h4 {
+  color: #ffff !important;
+}
+
+.tribe-events-calendar-month__day-date-link,
+.tribe-events-calendar-month__day-date-daynum {
+  color: #ffff !important;
+}
+
+time {
+  color: #ffff !important;
+}
+
+.qsm-quiz-container span,
+.qsm-quiz-container label {
+  color: #ffff !important;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11075,7 +11143,7 @@ body ul,
 body li,
 body hr,
 body p {
-  color: whitesmoke;
+  color: #ffff;
 }
 
 li,

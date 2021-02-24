@@ -207,12 +207,14 @@
     <?php
     //here we are using a built in function by pods to find posts with name service 
     $mypod= pods('home_page');
+    $contact_pod= pods('contact_info');
     // this function will take the pod instance find all the pods, and then sort them in ascending order by name (A-Z)
     $mypod->find('name ASC');
+    $contact_pod->find('name ASC');
     $loopIndex=0;
     $loop_index
     ?>
-    <?php while($mypod->fetch()) : ?>
+    <?php while($mypod->fetch() || $contact_pod->fetch()) : ?>
     <?php
         $sponsors_background = $mypod->field('sponsors_background'); 
         $sponsor_1 = $mypod->field('sponsor_1');
@@ -238,6 +240,9 @@
         $clinic_gif=$mypod->field('clinic_gif');
         $contact_background_1=$mypod->field('contact_background_image_1');
         $contact_background_2=$mypod->field('contact_background_image_2');
+
+        $linkedin= $contact_pod->field('linkedin');
+
 
         // permalink in wordpress is a link to the individual post
         $permalink = $mypod->field('permalink');
@@ -303,13 +308,31 @@
                 
                 <p class="mb-5"><?php echo $program_director_description; ?></p>
                 <div class="section-border mb-4"></div>
-                <i class="fab fa-linkedin fa-2x"></i>
+                <a href="<?php echo $linkedin;?>"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
-            <div id="gif" class="col-12 col-md-6 p-5" style=" background: url('<?php echo $clinic_gif['guid']; ?>') no-repeat center center/cover;">
+            <div id="gif" class="col-12 col-md-6 p-5" style=" background: url('<?php echo $clinic_gif['guid']; ?>') no-repeat center center/cover; min-height:19.5rem">
             </div>
         </div>
         <?php endwhile; ?>    
     </section>
+    <?php
+    //here we are using a built in function by pods to find posts with name service 
+    $contact_pod= pods('contact_info');
+    // this function will take the pod instance find all the pods, and then sort them in ascending order by name (A-Z)
+    $contact_pod->find('name ASC');
+    $loopIndex=0;
+    $loop_index
+    ?>
+    <?php while($contact_pod->fetch()) : ?>
+    <?php 
+        $phone_number = $contact_pod->field('phone_number');
+        $email = $contact_pod->field('email');
+        $facebook= $contact_pod->field('facebook');
+        $instagram= $contact_pod->field('instagram');
+        // permalink in wordpress is a link to the individual post
+        $permalink = $contact_pod->field('permalink');
+        $loopIndex +=1;
+    ?>
     <section class="p-2" id="contact">
         <div class="container">
             <h1 class="text-center text-uppercase pt-5">Get In Touch</h1>
@@ -317,22 +340,23 @@
             <div class="row">
                 <div id="email" class="col-12 col-md-4 border d-flex align-items-center justify-content-center flex-column p-4">
                 <p> <i class="far fa-paper-plane fa-3x"></i></p>
-                    <a class="font-italic" href="mailto:info@mylivesavers.com">info@mylivesavers.com</a>
+                    <a class="font-italic" href="mailto:<?php echo $email;?>"><?php echo $email;?></a>
                 </div>
                 <div id="phone" class="col-12 col-md-4" style="background: url('<?php echo $contact_background_1['guid'] ?>') no-repeat center center/cover;">
                     <div class="d-flex align-items-center justify-content-center flex-column" id="phone-content">
                         <p><i class="fas fa-mobile-alt fa-3x"></i></p>
-                        <a class="font-italic" href="tel:7025238616">702-623-8616</a>
+                        <a class="font-italic" href="tel:<?php echo $phone_number;?>"><?php echo $phone_number;?></a>
                     </div>
                 </div>
                 <div id="facebook" class="col-12 col-md-4" style="background: url('<?php echo $contact_background_2['guid']; ?>') no-repeat center center/cover;">
                     <div class="d-flex align-items-center justify-content-center flex-column" id="facebook-content">
                         <p><i class="fab fa-facebook-f fa-3x"></i></p>
-                        <a class="font-italic" href="tel:7025238616">Find us on Facebook</a>
+                        <a class="font-italic" href="<?php echo $facebook;?>">Find us on Facebook</a>
                     </div>
                 </div>
             </div>
         </div>
+        <?php endwhile; ?>    
     </section>
 
     <?php get_footer(); ?>
