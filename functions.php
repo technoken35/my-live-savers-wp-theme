@@ -58,6 +58,16 @@
             'after_title' => '</h3>'
         ));
 
+        register_sidebar(array(
+            'name' => __('mailchimp','myportfolio'),
+            'id'=> 'mailchimp-1',
+            'before_widget' => '<div id="%1$s class="widget-box %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        ));
+
+
 
     }
 

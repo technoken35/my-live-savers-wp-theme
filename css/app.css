@@ -505,6 +505,10 @@ table {
   font-size: 1.2rem;
 }
 
+#coming-soon {
+  display: none;
+}
+
 .rbc-calendar {
   background: #31365a;
   color: whitesmoke;
@@ -1168,8 +1172,14 @@ time {
 }
 
 .tribe-events-calendar-month__day-date-link,
-.tribe-events-calendar-month__day-date-daynum {
+.tribe-events-calendar-month__day-date-daynum,
+.tribe-events-c-nav__today {
   color: #ffff !important;
+}
+
+.tribe-events-c-events-bar__search-button svg,
+.tribe-events-c-view-selector__button svg {
+  stroke: #ffff;
 }
 
 time {
@@ -1179,6 +1189,61 @@ time {
 .qsm-quiz-container span,
 .qsm-quiz-container label {
   color: #ffff !important;
+}
+
+#mc4wp-form-1,
+.mc4wp-form,
+.mc4wp-form-193 {
+  color: #ffff;
+}
+#mc4wp-form-1 input[type=text],
+#mc4wp-form-1 input[type=email],
+#mc4wp-form-1 input[type=password],
+#mc4wp-form-1 input[type=number],
+.mc4wp-form input[type=text],
+.mc4wp-form input[type=email],
+.mc4wp-form input[type=password],
+.mc4wp-form input[type=number],
+.mc4wp-form-193 input[type=text],
+.mc4wp-form-193 input[type=email],
+.mc4wp-form-193 input[type=password],
+.mc4wp-form-193 input[type=number] {
+  display: block;
+  width: 100%;
+  height: calc(1.6em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  background-color: whitesmoke !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#mc4wp-form-1 input[type=submit],
+.mc4wp-form input[type=submit],
+.mc4wp-form-193 input[type=submit] {
+  display: inline-block;
+  font-weight: 400;
+  color: #ffff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #3d8fe4;
+  border: 1px solid #3d8fe4;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input {
+  opacity: 1 !important;
+  z-index: 0 !important;
+  position: relative !important;
 }
 
 /*!

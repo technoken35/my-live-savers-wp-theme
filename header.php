@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/app.css">
     <title><?php echo get_bloginfo('name'); ?></title>
 </head>
+
 <body>
+    <div class="wrapper">
         <?php
         
         $contact_pod= pods('contact_info');

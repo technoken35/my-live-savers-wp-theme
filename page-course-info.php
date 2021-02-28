@@ -38,7 +38,7 @@
         $loopIndex +=1;
 
     ?>
-        <header class=" mt-5 d-flex align-items-end justify-content-center" id="course-info-header" style="background: url(<?php echo $course_background_image; ?>) no-repeat center center/cover;">
+        <header class=" mt-5 d-flex align-items-end justify-content-center" id="course-info-header" style="background: url(<?php echo $course_background_image['guid']; ?>) no-repeat center center/cover;">
             <div id="featured-course-heading" class="p-2">
                 <h1 class="text-center"><?php echo $name;?></h1>
             </div>
@@ -48,7 +48,7 @@
             <div class="container p-5">
                 <div class="row">
                     <div class="col-12 col-md-6 mb-4  d-flex align-items-center h-100">
-                        <img src="<?php echo $intro_image;?>" alt="featured course image" class="img-fluid">
+                        <img src="<?php echo $intro_image['guid'];?>" alt="featured course image" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <h4><?php echo $intro_heading;?> </h4>
@@ -98,7 +98,7 @@
                         <a href="/community-calendar" class="btn btn-large btn-secondary"> View Course Calendar</a>
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0 ">
-                        <img id="featured-course-img" src="<?php echo $course_description_image;?>" alt="course description image" class="img-fluid">
+                        <img id="featured-course-img" src="<?php echo $course_description_image['guid'];?>" alt="course description image" class="img-fluid">
                         
 
                     </div>
